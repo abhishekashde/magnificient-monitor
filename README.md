@@ -21,5 +21,8 @@
 
 > docker build -t magnificent-service-monitor .  
 > docker run magnificent-service-monitor
+>
+#### To do
+> Docker to localhost access config remaining 
 
 
