@@ -37,7 +37,7 @@ public class ReportScheduler {
         } else if (failureRate > infoThreshold) {
             LOG.warn("Service uptime : {} ", successRate);
         }
-        LOG.debug("Service uptime : {} ", successRate);
+        LOG.info("Service health success rate : {} ", successRate);
         metrics.resetStats();
     }
 

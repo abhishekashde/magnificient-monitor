@@ -11,8 +11,11 @@ public class HealthStatusListener implements Listener {
     private MagnificientMetrics magnificientMetrics;
 
     @Override
-    public void onSuccess(Object body) {
-        magnificientMetrics.notifySuccess();
+    public void onSuccess(String body) {
+        if(body.equalsIgnoreCase("Magnificent"))
+            magnificientMetrics.notifySuccess();
+        else
+            magnificientMetrics.notifyFailure();
     }
 
     @Override
